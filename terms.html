@@ -68,11 +68,18 @@
             border-left: 4px solid #34C759;
             margin: 20px 0;
         }
-        .warning {
-            background: #fff3e0;
+        .highlight-warning {
+            background: #fff8e6;
             padding: 15px 20px;
             border-radius: 10px;
             border-left: 4px solid #FF9500;
+            margin: 20px 0;
+        }
+        .highlight-important {
+            background: #fef2f2;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #FF3B30;
             margin: 20px 0;
         }
         .contact {
@@ -104,11 +111,28 @@
         a:hover {
             text-decoration: underline;
         }
-        .version-box {
-            background: #f0f0f5;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 25px;
+        .new-badge {
+            background: #34C759;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background: #f5f5f7;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -120,202 +144,197 @@
             <p class="subtitle">Sama Kalpé - Application de gestion de finances personnelles</p>
         </div>
 
-        <div class="version-box">
-            <p><strong>Date d'entrée en vigueur :</strong> 1er janvier 2026</p>
-            <p><strong>Dernière mise à jour :</strong> 25 décembre 2025</p>
-            <p><strong>Version :</strong> 1.0</p>
-        </div>
+        <p><strong>Date d'entrée en vigueur :</strong> 1er janvier 2026</p>
+        <p><strong>Dernière mise à jour :</strong> 19 janvier 2026</p>
 
         <div class="highlight">
-            En téléchargeant, installant ou utilisant Sama Kalpé, vous acceptez d'être lié par les présentes conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'application.
+            <strong>Résumé :</strong> En utilisant Sama Kalpé, vous acceptez ces conditions. L'application est un outil d'aide à la gestion financière personnelle et ne constitue pas un conseil financier professionnel.
         </div>
 
         <h2>1. Acceptation des conditions</h2>
-        <p>Les présentes Conditions d'Utilisation ("Conditions") constituent un accord juridique entre vous ("Utilisateur", "vous") et Ibrahima Diallo ("Développeur", "nous", "notre") concernant votre utilisation de l'application mobile Sama Kalpé ("Application", "Service").</p>
-        <p>En accédant ou en utilisant l'Application, vous confirmez que :</p>
-        <ul>
-            <li>Vous avez au moins 13 ans (ou l'âge minimum requis dans votre pays)</li>
-            <li>Vous avez lu et compris ces Conditions</li>
-            <li>Vous acceptez d'être lié par ces Conditions</li>
-        </ul>
+        <p>En téléchargeant, installant ou utilisant l'application Sama Kalpé ("l'Application"), vous acceptez d'être lié par ces Conditions d'Utilisation ("Conditions"). Si vous n'acceptez pas ces Conditions, veuillez ne pas utiliser l'Application.</p>
+        <p>Ces Conditions constituent un accord légal entre vous et Ibrahima Diallo ("le Développeur", "nous", "notre").</p>
 
         <h2>2. Description du service</h2>
-        <p>Sama Kalpé est une application de gestion de finances personnelles qui vous permet de :</p>
+        <p>Sama Kalpé est une application mobile de gestion de finances personnelles qui vous permet de :</p>
         <ul>
             <li>Suivre vos revenus et dépenses</li>
             <li>Créer et gérer des budgets mensuels</li>
-            <li>Catégoriser vos transactions</li>
             <li>Définir des objectifs d'épargne</li>
-            <li>Gérer vos actifs et passifs</li>
-            <li>Visualiser des rapports et graphiques</li>
-            <li>Exporter vos données</li>
-            <li>Synchroniser vos données via iCloud</li>
+            <li>Gérer des plans de remboursement</li>
+            <li>Suivre vos actifs et passifs</li>
+            <li>Scanner et analyser des reçus</li>
+            <li>Gérer plusieurs devises</li>
+            <li>Obtenir des analyses financières personnalisées via l'IA</li>
+            <li>Exporter vos données en différents formats</li>
         </ul>
 
-        <h2>3. Licence d'utilisation</h2>
-        <h3>3.1 Licence accordée</h3>
-        <p>Nous vous accordons une licence limitée, non exclusive, non transférable et révocable pour utiliser l'Application sur des appareils Apple que vous possédez ou contrôlez, conformément aux présentes Conditions et aux règles d'utilisation de l'App Store d'Apple.</p>
+        <h2>3. Compte et utilisation</h2>
+        
+        <h3>3.1 Éligibilité</h3>
+        <p>Vous devez avoir au moins 13 ans pour utiliser l'Application. En utilisant l'Application, vous déclarez avoir au moins cet âge.</p>
 
-        <h3>3.2 Restrictions</h3>
+        <h3>3.2 Responsabilité des données</h3>
+        <p>Vous êtes seul responsable :</p>
+        <ul>
+            <li>De l'exactitude des données que vous saisissez</li>
+            <li>De la sauvegarde de vos données</li>
+            <li>De la protection de l'accès à votre appareil</li>
+            <li>Des décisions financières que vous prenez</li>
+        </ul>
+
+        <h2>4. Fonctionnalités gratuites et premium</h2>
+        
+        <h3>4.1 Version gratuite</h3>
+        <p>La version gratuite de Sama Kalpé inclut :</p>
+        <ul>
+            <li>Historique limité à 3 mois</li>
+            <li>Jusqu'à 3 transactions récurrentes</li>
+            <li>Jusqu'à 2 objectifs d'épargne</li>
+            <li>Fonctionnalités de base</li>
+            <li>Période d'essai de 30 jours pour les fonctionnalités premium</li>
+        </ul>
+
+        <h3>4.2 Achats intégrés <span class="new-badge">MIS À JOUR</span></h3>
+        <p>Sama Kalpé propose les achats intégrés suivants :</p>
+        
+        <table>
+            <tr>
+                <th>Produit</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>Premium Annuel</strong></td>
+                <td>Abonnement</td>
+                <td>Accès à toutes les fonctionnalités premium, renouvelé automatiquement chaque année</td>
+            </tr>
+            <tr>
+                <td><strong>Premium à vie</strong></td>
+                <td>Achat unique</td>
+                <td>Accès permanent à toutes les fonctionnalités, incluant Conseiller IA et Multi-devises avancé</td>
+            </tr>
+            <tr>
+                <td><strong>Multi-devises avancé</strong></td>
+                <td>Achat unique</td>
+                <td>Gestion multi-devises avec taux de change en temps réel</td>
+            </tr>
+            <tr>
+                <td><strong>Conseiller IA</strong></td>
+                <td>Achat unique</td>
+                <td>Analyses financières personnalisées par intelligence artificielle (15 analyses/mois)</td>
+            </tr>
+        </table>
+
+        <h3>4.3 Abonnements</h3>
+        <ul>
+            <li>Le paiement est débité de votre compte Apple lors de la confirmation d'achat</li>
+            <li>L'abonnement est renouvelé automatiquement sauf annulation au moins 24 heures avant la fin de la période</li>
+            <li>Vous pouvez gérer et annuler vos abonnements dans les réglages de votre compte Apple</li>
+            <li>Aucun remboursement n'est accordé pour la période en cours lors d'une annulation</li>
+        </ul>
+
+        <h3>4.4 Politique de remboursement</h3>
+        <p>Les remboursements sont gérés par Apple selon leurs politiques. Pour toute demande de remboursement, veuillez contacter le support Apple.</p>
+
+        <h2>5. Conseiller IA <span class="new-badge">NOUVEAU</span></h2>
+        
+        <h3>5.1 Description</h3>
+        <p>Le Conseiller IA utilise l'intelligence artificielle pour analyser vos données financières et vous fournir des conseils personnalisés.</p>
+
+        <h3>5.2 Limitations</h3>
+        <div class="highlight-important">
+            <strong>Avertissement important :</strong>
+            <ul style="margin-top: 10px; margin-bottom: 0;">
+                <li>Le Conseiller IA fournit des <strong>suggestions générales</strong>, pas des conseils financiers professionnels</li>
+                <li>Les analyses sont basées uniquement sur les données que vous avez saisies</li>
+                <li>L'IA peut faire des erreurs ou fournir des conseils inappropriés à votre situation</li>
+                <li>Consultez toujours un professionnel financier pour les décisions importantes</li>
+            </ul>
+        </div>
+
+        <h3>5.3 Quotas d'utilisation</h3>
+        <ul>
+            <li><strong>Premium à vie :</strong> 30 analyses par mois</li>
+            <li><strong>Addon Conseiller IA :</strong> 15 analyses par mois</li>
+        </ul>
+        <p>Les quotas sont réinitialisés le premier jour de chaque mois.</p>
+
+        <h3>5.4 Disponibilité</h3>
+        <p>Le service Conseiller IA dépend de services tiers et peut être temporairement indisponible. Nous ne garantissons pas une disponibilité à 100%.</p>
+
+        <h2>6. Propriété intellectuelle</h2>
+        
+        <h3>6.1 Nos droits</h3>
+        <p>L'Application, son code, son design, ses graphismes, et tout contenu associé sont la propriété exclusive d'Ibrahima Diallo et sont protégés par les lois sur la propriété intellectuelle.</p>
+
+        <h3>6.2 Licence d'utilisation</h3>
+        <p>Nous vous accordons une licence limitée, non exclusive, non transférable et révocable pour utiliser l'Application à des fins personnelles et non commerciales.</p>
+
+        <h3>6.3 Restrictions</h3>
         <p>Vous vous engagez à ne pas :</p>
         <ul>
             <li>Copier, modifier ou distribuer l'Application</li>
-            <li>Décompiler, désassembler ou tenter d'extraire le code source</li>
-            <li>Contourner les mesures de sécurité de l'Application</li>
+            <li>Effectuer de l'ingénierie inverse ou décompiler l'Application</li>
             <li>Utiliser l'Application à des fins illégales</li>
-            <li>Revendre ou sous-licencier l'Application</li>
-            <li>Supprimer les mentions de droits d'auteur ou de propriété</li>
+            <li>Tenter de contourner les mesures de sécurité ou les limitations</li>
+            <li>Utiliser l'Application de manière à nuire à d'autres utilisateurs</li>
         </ul>
 
-        <h2>4. Compte et sécurité</h2>
-        <h3>4.1 Données personnelles</h3>
-        <p>L'Application stocke vos données financières localement sur votre appareil. Vous êtes responsable de :</p>
-        <ul>
-            <li>La sécurité de votre appareil</li>
-            <li>L'exactitude des données que vous saisissez</li>
-            <li>La sauvegarde de vos données</li>
-        </ul>
-
-        <h3>4.2 Authentification biométrique</h3>
-        <p>L'Application propose une protection par Face ID ou Touch ID. Cette fonctionnalité est optionnelle et utilise les mécanismes de sécurité d'Apple.</p>
-
-        <h3>4.3 Synchronisation iCloud</h3>
-        <p>Si vous activez iCloud, vos données seront synchronisées selon les conditions d'Apple. Nous ne sommes pas responsables des problèmes liés aux services iCloud.</p>
-
-        <h2>5. Achats intégrés et abonnements</h2>
-        <h3>5.1 Version gratuite</h3>
-        <p>Sama Kalpé propose une version gratuite avec :</p>
-        <ul>
-            <li>Un mois d'historique de transactions</li>
-            <li>Fonctionnalités de base de suivi budgétaire</li>
-        </ul>
-
-        <h3>5.2 Version Premium</h3>
-        <p>La version Premium débloque des fonctionnalités supplémentaires :</p>
-        <ul>
-            <li>Historique illimité</li>
-            <li>Graphiques avancés</li>
-            <li>Transactions récurrentes</li>
-            <li>Objectifs d'épargne</li>
-            <li>Export des données</li>
-            <li>Bilan annuel</li>
-            <li>Gestion des actifs/passifs</li>
-            <li>Sauvegarde complète</li>
-        </ul>
-
-        <h3>5.3 Paiement et facturation</h3>
-        <ul>
-            <li>Les achats sont traités par Apple via l'App Store</li>
-            <li>Les prix sont affichés dans votre devise locale</li>
-            <li>Le paiement est débité sur votre compte Apple</li>
-        </ul>
-
-        <h3>5.4 Remboursements</h3>
-        <p>Les demandes de remboursement doivent être adressées à Apple conformément à leur politique de remboursement de l'App Store.</p>
-
-        <h2>6. Propriété intellectuelle</h2>
-        <h3>6.1 Droits du développeur</h3>
-        <p>L'Application, y compris son code, son design, ses graphiques, son interface et son contenu, est protégée par les lois sur la propriété intellectuelle. Tous les droits sont réservés.</p>
-
-        <h3>6.2 Vos données</h3>
-        <p>Vous conservez tous les droits sur les données financières que vous saisissez dans l'Application. Nous ne revendiquons aucun droit de propriété sur vos données personnelles.</p>
-
-        <h3>6.3 Marques</h3>
-        <p>"Sama Kalpé" et le logo de l'Application sont des marques protégées. Vous ne pouvez pas les utiliser sans autorisation écrite.</p>
-
-        <h2>7. Limitation de responsabilité</h2>
+        <h2>7. Vos données</h2>
         
-        <div class="warning">
-            <strong>⚠️ Important :</strong> Sama Kalpé est un outil d'aide à la gestion budgétaire. Elle ne constitue pas un conseil financier professionnel et ne doit pas être utilisée comme tel.
+        <h3>7.1 Propriété</h3>
+        <p>Vous restez propriétaire de toutes les données que vous saisissez dans l'Application.</p>
+
+        <h3>7.2 Sauvegarde</h3>
+        <div class="highlight-warning">
+            <strong>Important :</strong> Nous vous recommandons fortement d'activer la synchronisation iCloud ou d'effectuer des sauvegardes régulières. Nous ne sommes pas responsables de la perte de données.
         </div>
 
-        <h3>7.1 Service fourni "en l'état"</h3>
-        <p>L'Application est fournie "EN L'ÉTAT" et "SELON DISPONIBILITÉ", sans garantie d'aucune sorte, expresse ou implicite, y compris mais sans s'y limiter :</p>
-        <ul>
-            <li>Les garanties de qualité marchande</li>
-            <li>L'adéquation à un usage particulier</li>
-            <li>L'absence de contrefaçon</li>
-            <li>L'exactitude ou la fiabilité des résultats</li>
-        </ul>
+        <h3>7.3 Confidentialité</h3>
+        <p>L'utilisation de vos données est régie par notre <a href="privacy-policy.html">Politique de Confidentialité</a>.</p>
 
-        <h3>7.2 Exclusion de responsabilité</h3>
-        <p>Dans toute la mesure permise par la loi applicable, nous ne serons pas responsables de :</p>
-        <ul>
-            <li>Toute perte de données</li>
-            <li>Tout dommage direct, indirect, accessoire ou consécutif</li>
-            <li>Toute perte financière résultant de l'utilisation de l'Application</li>
-            <li>Toute décision financière basée sur les informations de l'Application</li>
-            <li>Toute interruption du service</li>
-        </ul>
+        <h2>8. Limitation de responsabilité</h2>
+        
+        <h3>8.1 Outil d'aide</h3>
+        <p>Sama Kalpé est un <strong>outil d'aide à la gestion financière personnelle</strong>. L'Application ne fournit pas de conseils financiers, fiscaux, juridiques ou d'investissement professionnels.</p>
 
-        <h3>7.3 Conseils financiers</h3>
-        <p>L'Application n'est pas conçue pour fournir des conseils financiers, fiscaux ou juridiques. Pour de tels conseils, consultez un professionnel qualifié.</p>
+        <h3>8.2 Exactitude</h3>
+        <p>Nous ne garantissons pas l'exactitude des calculs, analyses ou suggestions fournis par l'Application, y compris ceux générés par le Conseiller IA.</p>
 
-        <h2>8. Indemnisation</h2>
-        <p>Vous acceptez de défendre, indemniser et dégager de toute responsabilité le Développeur contre toute réclamation, dommage, perte ou dépense découlant de :</p>
-        <ul>
-            <li>Votre utilisation de l'Application</li>
-            <li>Votre violation de ces Conditions</li>
-            <li>Votre violation des droits d'un tiers</li>
-        </ul>
+        <h3>8.3 Exclusion de garanties</h3>
+        <p>L'Application est fournie "telle quelle" sans garantie d'aucune sorte, expresse ou implicite, y compris mais sans s'y limiter, les garanties de qualité marchande ou d'adéquation à un usage particulier.</p>
 
-        <h2>9. Modifications du service</h2>
-        <p>Nous nous réservons le droit de :</p>
-        <ul>
-            <li>Modifier ou interrompre l'Application à tout moment</li>
-            <li>Ajouter ou supprimer des fonctionnalités</li>
-            <li>Modifier les prix des achats intégrés (avec préavis)</li>
-        </ul>
-        <p>Nous nous efforcerons de vous informer des changements importants via l'Application ou par d'autres moyens appropriés.</p>
+        <h3>8.4 Limitation des dommages</h3>
+        <p>En aucun cas, nous ne serons responsables des dommages directs, indirects, accessoires, spéciaux ou consécutifs résultant de l'utilisation ou de l'impossibilité d'utiliser l'Application.</p>
+
+        <h2>9. Disponibilité et modifications</h2>
+        
+        <h3>9.1 Disponibilité</h3>
+        <p>Nous nous efforçons de maintenir l'Application disponible, mais nous ne garantissons pas un fonctionnement ininterrompu ou sans erreur.</p>
+
+        <h3>9.2 Mises à jour</h3>
+        <p>Nous pouvons modifier, mettre à jour ou interrompre l'Application ou certaines fonctionnalités à tout moment, avec ou sans préavis.</p>
+
+        <h3>9.3 Modifications des conditions</h3>
+        <p>Nous nous réservons le droit de modifier ces Conditions à tout moment. Les modifications entreront en vigueur dès leur publication. Votre utilisation continue de l'Application après modification constitue votre acceptation des nouvelles Conditions.</p>
 
         <h2>10. Résiliation</h2>
-        <h3>10.1 Par vous</h3>
-        <p>Vous pouvez cesser d'utiliser l'Application à tout moment en la supprimant de votre appareil.</p>
+        <p>Nous pouvons suspendre ou résilier votre accès à l'Application à tout moment, sans préavis, en cas de violation de ces Conditions.</p>
+        <p>Vous pouvez résilier votre utilisation à tout moment en désinstallant l'Application.</p>
 
-        <h3>10.2 Par nous</h3>
-        <p>Nous pouvons suspendre ou résilier votre accès si vous violez ces Conditions ou si nous cessons de fournir le service.</p>
+        <h2>11. Droit applicable</h2>
+        <p>Ces Conditions sont régies par le droit français. Tout litige relatif à ces Conditions sera soumis à la compétence exclusive des tribunaux français.</p>
 
-        <h3>10.3 Effet de la résiliation</h3>
-        <p>La suppression de l'Application entraîne la suppression de toutes les données locales. Les données iCloud restent selon vos paramètres Apple.</p>
-
-        <h2>11. Dispositions générales</h2>
-        <h3>11.1 Intégralité de l'accord</h3>
-        <p>Ces Conditions, ainsi que notre Politique de Confidentialité, constituent l'intégralité de l'accord entre vous et nous concernant l'Application.</p>
-
-        <h3>11.2 Divisibilité</h3>
+        <h2>12. Divisibilité</h2>
         <p>Si une disposition de ces Conditions est jugée invalide ou inapplicable, les autres dispositions resteront en vigueur.</p>
 
-        <h3>11.3 Renonciation</h3>
-        <p>Le fait de ne pas exercer un droit prévu par ces Conditions ne constitue pas une renonciation à ce droit.</p>
-
-        <h3>11.4 Cession</h3>
-        <p>Vous ne pouvez pas céder vos droits ou obligations en vertu de ces Conditions sans notre consentement écrit.</p>
-
-        <h2>12. Droit applicable</h2>
-        <p>Ces Conditions sont régies par les lois du Sénégal. Tout litige sera soumis à la compétence exclusive des tribunaux de Dakar, Sénégal.</p>
-        <p>Pour les utilisateurs de l'Union Européenne, les dispositions impératives de protection des consommateurs de votre pays de résidence s'appliquent.</p>
-
-        <h2>13. Modifications des conditions</h2>
-        <p>Nous pouvons modifier ces Conditions à tout moment. Les modifications entrent en vigueur dès leur publication. Votre utilisation continue de l'Application après modification constitue votre acceptation des nouvelles Conditions.</p>
-        <p>Pour les modifications substantielles, nous vous informerons via l'Application au moins 30 jours avant l'entrée en vigueur.</p>
-
-        <h2>14. Contact</h2>
+        <h2>13. Contact</h2>
         <div class="contact">
             <p>Pour toute question concernant ces Conditions d'Utilisation :</p>
             <p><strong>Email :</strong> <a href="mailto:samakalpe.officiel@gmail.com">samakalpe.officiel@gmail.com</a></p>
             <p><strong>Développeur :</strong> Ibrahima Diallo</p>
         </div>
-
-        <h2>15. Conditions spécifiques Apple</h2>
-        <p>En utilisant l'Application, vous reconnaissez que :</p>
-        <ul>
-            <li>Ces Conditions sont conclues entre vous et le Développeur, et non avec Apple</li>
-            <li>Apple n'est pas responsable de l'Application ni de son contenu</li>
-            <li>Apple n'a aucune obligation de fournir des services de maintenance ou de support</li>
-            <li>En cas de non-conformité de l'Application à une garantie applicable, Apple peut rembourser le prix d'achat (le cas échéant)</li>
-            <li>Apple n'est pas responsable de traiter les réclamations de tiers</li>
-            <li>Apple et ses filiales sont des tiers bénéficiaires de ces Conditions</li>
-        </ul>
 
         <footer>
             <p>© 2026 Sama Kalpé. Tous droits réservés.</p>
