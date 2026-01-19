@@ -68,6 +68,13 @@
             border-left: 4px solid #007AFF;
             margin: 20px 0;
         }
+        .highlight-warning {
+            background: #fff8e6;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #FF9500;
+            margin: 20px 0;
+        }
         .contact {
             background: #f5f5f7;
             padding: 20px;
@@ -97,6 +104,15 @@
         a:hover {
             text-decoration: underline;
         }
+        .new-badge {
+            background: #34C759;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -108,7 +124,7 @@
         </div>
 
         <p><strong>Date d'entrée en vigueur :</strong> 1er janvier 2026</p>
-        <p><strong>Dernière mise à jour :</strong> 29 décembre 2025</p>
+        <p><strong>Dernière mise à jour :</strong> 19 janvier 2026</p>
 
         <div class="highlight">
             <strong>Notre engagement :</strong> Sama Kalpé respecte votre vie privée. Vos données financières restent sur votre appareil et ne sont jamais vendues ni partagées avec des tiers à des fins commerciales.
@@ -116,7 +132,7 @@
 
         <h2>1. Introduction</h2>
         <p>Sama Kalpé ("l'Application", "nous", "notre") est une application de gestion de finances personnelles développée par Ibrahima Diallo. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre application.</p>
-        <p>"Sama Kalpé" signifie "Mon budget" en Wolof, reflétant notre engagement à vous aider à gérer vos finances de manière simple et personnelle.</p>
+        <p>"Sama Kalpé" signifie "Mon argent" en Wolof, reflétant notre engagement à vous aider à gérer vos finances de manière simple et personnelle.</p>
 
         <h2>2. Données collectées</h2>
         
@@ -127,6 +143,7 @@
             <li><strong>Catégories personnalisées :</strong> catégories de dépenses et revenus que vous créez</li>
             <li><strong>Budgets :</strong> objectifs budgétaires mensuels</li>
             <li><strong>Objectifs d'épargne :</strong> montants cibles et progression</li>
+            <li><strong>Plans de remboursement :</strong> échéanciers de paiement et suivi</li>
             <li><strong>Actifs et passifs :</strong> informations sur votre patrimoine</li>
             <li><strong>Préférences :</strong> devise, thème, langue, paramètres d'affichage</li>
         </ul>
@@ -140,7 +157,29 @@
             <li>Vous pouvez désactiver cette fonctionnalité à tout moment</li>
         </ul>
 
-        <h3>2.3 Données d'analyse (Firebase Analytics)</h3>
+        <h3>2.3 Conseiller IA <span class="new-badge">NOUVEAU</span></h3>
+        <p>Si vous utilisez la fonctionnalité Conseiller IA (disponible avec Premium à vie ou l'addon Conseiller IA) :</p>
+        <ul>
+            <li><strong>Données envoyées pour analyse :</strong> Un résumé agrégé de vos finances est envoyé de manière sécurisée (totaux revenus/dépenses, taux d'épargne, répartition par catégorie, progression des objectifs)</li>
+            <li><strong>Traitement :</strong> L'analyse est effectuée via l'API Claude d'Anthropic, un service d'intelligence artificielle</li>
+            <li><strong>Anonymisation :</strong> Aucune information personnellement identifiable n'est transmise (pas de nom, pas d'email, pas de descriptions de transactions)</li>
+            <li><strong>Pas de stockage externe :</strong> Anthropic ne conserve pas vos données après l'analyse</li>
+            <li><strong>Sécurité :</strong> Les communications sont chiffrées via HTTPS</li>
+        </ul>
+        
+        <div class="highlight-warning">
+            <strong>Important :</strong> Vous pouvez utiliser Sama Kalpé sans jamais activer le Conseiller IA. Cette fonctionnalité est entièrement optionnelle et nécessite un achat séparé.
+        </div>
+
+        <h3>2.4 Multi-devises avancé <span class="new-badge">NOUVEAU</span></h3>
+        <p>Si vous utilisez la fonctionnalité Multi-devises avancé :</p>
+        <ul>
+            <li>Les taux de change sont récupérés depuis des API publiques</li>
+            <li>Aucune donnée personnelle n'est partagée pour cette fonctionnalité</li>
+            <li>Vos préférences de devises restent stockées localement</li>
+        </ul>
+
+        <h3>2.5 Données d'analyse (Firebase Analytics)</h3>
         <p>Nous utilisons Firebase Analytics de Google pour comprendre comment l'application est utilisée. Ces données sont <strong>anonymes</strong> et incluent :</p>
         <ul>
             <li>Statistiques d'utilisation générales (écrans visités, fonctionnalités utilisées)</li>
@@ -152,7 +191,7 @@
         </ul>
         <p><strong>Ces données ne contiennent aucune information financière personnelle (montants, descriptions de transactions, noms de catégories personnalisées).</strong></p>
 
-        <h3>2.4 Rapports de crash (Firebase Crashlytics)</h3>
+        <h3>2.6 Rapports de crash (Firebase Crashlytics)</h3>
         <p>En cas de plantage de l'application, des informations techniques sont collectées pour nous aider à corriger les bugs :</p>
         <ul>
             <li>Logs techniques du crash</li>
@@ -164,6 +203,7 @@
         <p>Nous utilisons les données collectées pour :</p>
         <ul>
             <li>Fournir et améliorer les fonctionnalités de l'application</li>
+            <li>Générer des analyses financières personnalisées via le Conseiller IA</li>
             <li>Corriger les bugs et améliorer la stabilité</li>
             <li>Comprendre les fonctionnalités les plus utilisées</li>
             <li>Développer de nouvelles fonctionnalités</li>
@@ -174,24 +214,52 @@
             <strong>Ce que nous ne faisons JAMAIS :</strong>
             <ul style="margin-top: 10px; margin-bottom: 0;">
                 <li>Vendre vos données à des tiers</li>
-                <li>Partager vos informations financières</li>
-                <li>Utiliser vos données à des fins publicitaires</li>
-                <li>Accéder à vos transactions ou montants</li>
-                <li>Collecter vos descriptions de transactions</li>
+                <li>Partager vos informations financières détaillées</li>
+                <li>Utiliser vos données à des fins publicitaires ciblées</li>
+                <li>Accéder à vos descriptions de transactions individuelles</li>
+                <li>Conserver vos données sur nos serveurs de manière permanente</li>
                 <li>Tracker votre localisation</li>
             </ul>
         </div>
 
-        <h2>4. Sécurité des données</h2>
+        <h2>4. Services tiers</h2>
+        <p>Sama Kalpé utilise les services tiers suivants :</p>
+        
+        <h3>4.1 Firebase (Google)</h3>
+        <ul>
+            <li><strong>Firebase Analytics :</strong> Analyse d'utilisation anonyme</li>
+            <li><strong>Firebase Crashlytics :</strong> Rapports de crash</li>
+            <li><strong>Firebase Functions :</strong> Traitement sécurisé pour le Conseiller IA</li>
+        </ul>
+        <p>Politique de confidentialité : <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
+
+        <h3>4.2 Anthropic (Claude AI) <span class="new-badge">NOUVEAU</span></h3>
+        <ul>
+            <li><strong>Utilisation :</strong> Génération des analyses financières du Conseiller IA</li>
+            <li><strong>Données transmises :</strong> Résumés financiers agrégés uniquement</li>
+            <li><strong>Conservation :</strong> Anthropic ne conserve pas les données après traitement</li>
+        </ul>
+        <p>Politique de confidentialité : <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></p>
+
+        <h3>4.3 Apple</h3>
+        <ul>
+            <li><strong>iCloud :</strong> Synchronisation des données (optionnel)</li>
+            <li><strong>App Store :</strong> Gestion des achats intégrés</li>
+            <li><strong>StoreKit :</strong> Traitement des paiements</li>
+        </ul>
+        <p>Politique de confidentialité : <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
+
+        <h2>5. Sécurité des données</h2>
         <p>Nous prenons la sécurité de vos données très au sérieux :</p>
         <ul>
             <li><strong>Stockage local :</strong> Vos données financières restent sur votre appareil</li>
             <li><strong>Authentification biométrique :</strong> Face ID / Touch ID disponible pour protéger l'accès</li>
             <li><strong>Chiffrement iCloud :</strong> Si activé, vos données sont chiffrées par Apple</li>
-            <li><strong>Aucun serveur externe :</strong> Nous n'avons pas de serveurs stockant vos données personnelles</li>
+            <li><strong>Communications sécurisées :</strong> Toutes les transmissions utilisent HTTPS/TLS</li>
+            <li><strong>Pas de serveur central :</strong> Nous n'avons pas de serveurs stockant vos données personnelles de manière permanente</li>
         </ul>
 
-        <h2>5. Authentification biométrique</h2>
+        <h2>6. Authentification biométrique</h2>
         <p>Sama Kalpé propose l'utilisation de Face ID ou Touch ID pour :</p>
         <ul>
             <li>Protéger l'accès à l'application</li>
@@ -199,29 +267,34 @@
         </ul>
         <p>Les données biométriques sont gérées par iOS et ne quittent jamais votre appareil. Nous n'y avons pas accès.</p>
 
-        <h2>6. Achats intégrés</h2>
+        <h2>7. Achats intégrés</h2>
         <p>Sama Kalpé propose des achats intégrés pour débloquer des fonctionnalités premium :</p>
+        
+        <h3>7.1 Produits disponibles</h3>
+        <ul>
+            <li><strong>Premium Annuel :</strong> Abonnement renouvelable donnant accès à toutes les fonctionnalités premium</li>
+            <li><strong>Premium à vie :</strong> Achat unique donnant un accès permanent à toutes les fonctionnalités, incluant le Conseiller IA et Multi-devises avancé</li>
+            <li><strong>Multi-devises avancé :</strong> Addon pour la gestion multi-devises avec taux en temps réel</li>
+            <li><strong>Conseiller IA :</strong> Addon pour l'analyse financière personnalisée par intelligence artificielle</li>
+        </ul>
+
+        <h3>7.2 Gestion des paiements</h3>
         <ul>
             <li>Les transactions sont gérées par Apple via l'App Store</li>
             <li>Nous ne stockons pas vos informations de paiement</li>
             <li>Les reçus d'achat sont vérifiés de manière sécurisée</li>
+            <li>Vous pouvez gérer vos abonnements dans les réglages de votre compte Apple</li>
         </ul>
-
-        <h2>7. Partage de données</h2>
-        <p>Nous ne partageons vos données personnelles qu'avec :</p>
-        <ul>
-            <li><strong>Firebase (Google) :</strong> Pour les analyses anonymes et rapports de crash</li>
-            <li><strong>Apple :</strong> Pour la synchronisation iCloud et les achats intégrés</li>
-        </ul>
-        <p>Ces partenaires sont soumis à leurs propres politiques de confidentialité.</p>
 
         <h2>8. Vos droits</h2>
-        <p>Vous avez le droit de :</p>
+        <p>Conformément au RGPD et autres réglementations applicables, vous avez le droit de :</p>
         <ul>
             <li><strong>Accéder</strong> à toutes vos données (elles sont sur votre appareil)</li>
+            <li><strong>Rectifier</strong> vos données directement dans l'application</li>
             <li><strong>Supprimer</strong> vos données à tout moment via les paramètres de l'application</li>
             <li><strong>Exporter</strong> vos données en PDF, Excel ou CSV</li>
             <li><strong>Désactiver</strong> la synchronisation iCloud</li>
+            <li><strong>Refuser</strong> d'utiliser le Conseiller IA</li>
             <li><strong>Supprimer</strong> l'application pour effacer toutes les données locales</li>
         </ul>
 
@@ -230,19 +303,29 @@
             <li><strong>Données locales :</strong> Conservées jusqu'à suppression par vous</li>
             <li><strong>Données iCloud :</strong> Selon les paramètres de votre compte Apple</li>
             <li><strong>Données analytiques :</strong> Conservées 14 mois maximum par Firebase</li>
+            <li><strong>Analyses IA :</strong> Historique conservé localement (10 dernières analyses), supprimable à tout moment</li>
         </ul>
 
-        <h2>10. Enfants</h2>
-        <p>Sama Kalpé n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données auprès d'enfants.</p>
+        <h2>10. Transferts internationaux</h2>
+        <p>Certaines données peuvent être traitées en dehors de l'Union Européenne :</p>
+        <ul>
+            <li><strong>Firebase :</strong> Serveurs Google (États-Unis, avec garanties appropriées)</li>
+            <li><strong>Anthropic :</strong> Serveurs aux États-Unis (pour le Conseiller IA uniquement)</li>
+        </ul>
+        <p>Ces transferts sont encadrés par des clauses contractuelles types approuvées par la Commission Européenne.</p>
 
-        <h2>11. Modifications de cette politique</h2>
+        <h2>11. Enfants</h2>
+        <p>Sama Kalpé n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données auprès d'enfants. Si vous êtes parent et pensez que votre enfant nous a fourni des informations, contactez-nous.</p>
+
+        <h2>12. Modifications de cette politique</h2>
         <p>Nous pouvons mettre à jour cette politique de confidentialité. Les modifications seront publiées sur cette page avec une nouvelle date de mise à jour. Pour les changements importants, nous vous informerons via l'application.</p>
 
-        <h2>12. Contact</h2>
+        <h2>13. Contact</h2>
         <div class="contact">
-            <p>Pour toute question concernant cette politique de confidentialité ou vos données :</p>
+            <p>Pour toute question concernant cette politique de confidentialité, vos données, ou pour exercer vos droits :</p>
             <p><strong>Email :</strong> <a href="mailto:samakalpe.officiel@gmail.com">samakalpe.officiel@gmail.com</a></p>
             <p><strong>Développeur :</strong> Ibrahima Diallo</p>
+            <p><strong>Délai de réponse :</strong> Nous nous engageons à répondre dans un délai de 30 jours.</p>
         </div>
 
         <footer>
